@@ -68,6 +68,7 @@ $Allcom =  Get-ChildItem -path HKLM:\Software\Classes | Where-Object -FilterScri
 
 
  # GET CIM Class
+Get-CimClass
 Get-CimClass -ClassName Win32_Process
 
 Get-CimInstance -ClassName Win32_LogicalDisk

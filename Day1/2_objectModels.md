@@ -22,6 +22,7 @@ An object is an instance of a Type
 * Common information model (CIM)
 * Component object model (COM)
 * Windows management instrumentation (WMI)
+* Classes: custome classes which are created
 
 default data type comes from .NET. using CIM, COM and WMI we can define our own set of classes, properties and methods
 

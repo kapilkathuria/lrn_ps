@@ -12,7 +12,7 @@ NOTE: runspace - light weight ps thread. used for creating multiple session in p
 - you can connect back to disconnected sessions
 - connectingn back to ps session required ps 3.0 or higher on both ends
 
-there are 3 session stated
+there are 3 session states
 - opened
 - disconnected
 - Broken
@@ -45,4 +45,12 @@ serveral products like exchange 2010+ use implicit remoting
 - basic: not recomended. login and password as plain text. must be enabled explicity with ssl auth.
 
 
+## trusted hosts
+- setting on client - contains list of computers that are trusted.
+- can include member of workgroup or different domain
+
+## Workng with credential
+- in plain text. most cmdlet don't accept plain text
+- [System.Security.SecureString]
+- [system.management.automation.pscredential]
 
