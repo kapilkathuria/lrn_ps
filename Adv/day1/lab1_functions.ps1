@@ -41,3 +41,6 @@ function Remove-LabUsers {
     $Created = (Get-Date).AddHours(-$Hours)
     Get-Aduser -filter { WhenCreated -gt $Created } | Remove-ADUser -Confirm:$false -Verbose
 }
+
+git config --global user.name "Kapil Kathuria"
+git config --global user.email "kapil.kathuria@gmail.com"
