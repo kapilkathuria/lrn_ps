@@ -118,3 +118,16 @@ function Test-ParameterValidation {
 Test-ParameterValidation -Name "Bob" -Age 25
 # The following line will throw a validation error
 Test-ParameterValidation -Name "" -Age 150
+
+# Regex validation
+function Test-RegexValidation {
+    param (
+        [Parameter(Mandatory = $true)]
+        [ValidatePattern("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")]
+        [string]$Email
+    )
+
+    Write-Host "Valid Email: $Email" -ForegroundColor DarkGreen
+}
+
+Test-RegexValidation -Email "kapil.kathuria@gmail.com"
