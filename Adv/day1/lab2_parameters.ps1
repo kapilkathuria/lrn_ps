@@ -33,7 +33,8 @@ Function New-ContosoUser {
         [parameter(ParameterSetName = "User")]$FirstName,
         [parameter(ParameterSetName = "User")]$LastName,
         [parameter(ParameterSetName = "User")]$Title,
-        [parameter(ParameterSetName = "User")]$City,
+        [parameter(ParameterSetName = "User")]
+        [ValidateSet("Seattle", "Phoenix", "Charlotte", "Fargo", "Boston")]$City,
         [parameter(ParameterSetName = "User")]$EmployeeNumber
     )
 
@@ -104,3 +105,8 @@ New-ContosoUser -AccountName John
 Get-LabUsers
 Remove-LabUsers
 
+# Validate set
+# This works
+New-ContosoUser -Name John -City Boston
+# This doesn't
+New-ContosoUser -Name John -City Chicago
