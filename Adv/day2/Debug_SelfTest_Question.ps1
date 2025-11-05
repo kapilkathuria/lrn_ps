@@ -1,7 +1,7 @@
 Function Get-ServiceReport {
     $services = Get-Service x*
     $report = New-Object -TypeName System.Collections.ArrayList
-    for ($i = 0; $i -le $services.count; $i++) {
+    for ($i = 0; $i -lt $services.count; $i++) {
         $obj = [pscustomobject]@{
             ReportID      = $i
             Name          = $Services[$i].DisplayName
@@ -14,4 +14,5 @@ Function Get-ServiceReport {
     $report | Out-GridView
 }
 
+Set-StrictMode -Version Latest
 Get-ServiceReport
