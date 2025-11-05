@@ -32,3 +32,5 @@
         Write-Host "Processing Complete"
     }
 }
+
+ProcessUserFile -UserFile C:\Users\administrator.CONTOSO\OneDrive\lrn_ps\Adv\day2\users1.csv
