@@ -1,0 +1,8 @@
+
+    Directory: C:\
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----            9/9/2024  9:51 AM                Windows
+d-r--           2/17/2023  2:12 AM                Users
+
