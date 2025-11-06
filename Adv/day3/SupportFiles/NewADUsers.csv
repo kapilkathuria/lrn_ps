@@ -1,0 +1,6 @@
+ou;cn;samaccountname
+CN=Users,DC=contoso,DC=local;2;3
+CN=Users,DC=contoso,DC=local;3;4
+CN=Users,DC=contoso,DC=local;4;5
+CN=Users,DC=contoso,DC=local;7;8
+CN=Users,DC=contoso,DC=local;s;d
